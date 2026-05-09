@@ -11,11 +11,9 @@
 /Realtime Industrial Coconut Counting System/
 ├── api/                # FastAPI backend server
 ├── dashboard/          # Streamlit monitoring dashboard
-├── data/               # Synthetic data generation and storage
+├── assets/             #
 ├── models/             # Machine Learning model implementations and artifacts
 ├── utils/              # Feature engineering and preprocessing utilities
-├── train.py            # Model training and persistence script
-├── main.py             # Project entry point and configuration guide
 └── requirements.txt    # Python dependency manifest
 ```
 
@@ -30,19 +28,13 @@
    pip install -r requirements.txt
    ```
 
-2. **Initialize Models**:
-   Run the training script to generate the initial synthetic dataset and train the ensemble models.
-   ```bash
-   python train.py
-   ```
-
-3. **Launch Inference API**:
+2. **Launch Inference API**:
    Start the FastAPI server to handle incoming prediction requests.
    ```bash
    uvicorn api.server:app --reload
    ```
 
-4. **Launch Monitoring Dashboard**:
+3. **Launch Monitoring Dashboard**:
    Open a separate session to run the visualization layer.
    ```bash
    streamlit run dashboard/app.py
