@@ -10,9 +10,22 @@
 ```text
 /Realtime Industrial Coconut Counting System/
 ├── api/                # FastAPI backend server
-├── dashboard/          # Streamlit monitoring dashboard
+│   └── server.py
+│
 ├── assets/             #
+│   └── video_demo.mp4
+├── dashboard/          # Streamlit monitoring dashboard
+│   └── app.py
 ├── models/             # Machine Learning model implementations and artifacts
+├── outputs/
+├── src/
+│   ├── __init__.py
+│   ├── config.py            # Global Config (Absolute Paths)
+│   ├── counter.py           # Logic Line Crossing & OpenCV Drawing
+│   ├── detector.py          # YOLO ByteTrack Wrapper
+│   ├── stream_processor.py  # Single Pipeline Manager
+│   └── utils.py             # Helper/Utils module
+│
 ├── utils/              # Feature engineering and preprocessing utilities
 └── requirements.txt    # Python dependency manifest
 ```
