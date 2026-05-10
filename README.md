@@ -8,7 +8,7 @@
 ## Project Structure
 
 ```text
-/Realtime Industrial Coconut Counting System/
+realtime-industrial-coconut-counting/
 ├── api/                # FastAPI backend server
 │   └── server.py
 │
@@ -44,7 +44,7 @@
 2. **Launch Inference API**:
    Start the FastAPI server to handle incoming prediction requests.
    ```bash
-   uvicorn api.server:app --reload
+   uvicorn api.server:app --host 0.0.0.0 --port 8000 --reload
    ```
 
 3. **Launch Monitoring Dashboard**:
