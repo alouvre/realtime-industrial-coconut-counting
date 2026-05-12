@@ -32,7 +32,11 @@ realtime-industrial-coconut-counting/
 
 
 ## System Requirements
-
+### Techstacks
+|Layer|Technology|
+|----|----|
+|||
+|----|----|
 
 ## Setup and Installation
 
@@ -47,7 +51,13 @@ realtime-industrial-coconut-counting/
    uvicorn api.server:app --host 0.0.0.0 --port 8000 --reload
    ```
 
-3. **Launch Monitoring Dashboard**:
+   Health check:
+  ```bash
+  curl http://localhost:8000/health
+  # {"status":"OK","message":"AI Counting API is running}
+  ```
+
+4. **Launch Monitoring Dashboard**:
    Open a separate session to run the visualization layer.
    ```bash
    streamlit run dashboard/app.py
