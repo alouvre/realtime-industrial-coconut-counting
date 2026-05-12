@@ -32,10 +32,20 @@ realtime-industrial-coconut-counting/
 
 
 ## System Requirements
-### Techstacks
+### Tech Stacks
 |Layer|Technology|
 |----|----|
-|||
+|Backend Runtime|Python 3.12, FastAPI, uvicorn (asyncio)|
+|ML — detection|YOLOv8n via ultralytics|
+|ML — re-ID + search||
+|Coconut tracking||
+|Video decoding||
+|Message broker||
+|Database||
+|ORM / migrations||
+|Dependency manager|Conda|
+|Frontend||
+|Containers||
 |----|----|
 
 ## Setup and Installation
