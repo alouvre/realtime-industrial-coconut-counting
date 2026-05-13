@@ -61,11 +61,11 @@ realtime-industrial-coconut-counting/
    uvicorn api.server:app --host 0.0.0.0 --port 8000 --reload
    ```
 
-   Health check:
-  ```bash
-  curl http://localhost:8000/health
-  # {"status":"OK","message":"AI Counting API is running}
-  ```
+      Health check:
+     ```bash
+     curl http://localhost:8000/health
+     # {"status":"OK","message":"AI Counting API is running}
+     ```
 
 4. **Launch Monitoring Dashboard**:
    Open a separate session to run the visualization layer.
