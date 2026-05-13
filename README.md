@@ -40,6 +40,12 @@ realtime-industrial-coconut-counting/
 └── requirements.txt    # Python dependency manifest
 ```
 
+## Prerequisites
+- Python 3.12+ and conda
+- Docker + Docker Compose
+- Node.js 20+
+
+No GPU, no Google account, no cloud services required.
 
 ## System Requirements
 ### Tech Stacks
@@ -81,11 +87,6 @@ realtime-industrial-coconut-counting/
    ```bash
    streamlit run dashboard/app.py
    ```
-
-
-## Technical Implementation
-
-### Feature Engineering
 
 
 ## License
