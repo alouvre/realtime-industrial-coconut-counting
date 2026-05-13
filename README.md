@@ -15,6 +15,21 @@
 |NL video search||
 |DB persistence||
 
+## Tech Stacks
+|Layer|Technology|
+|----|----|
+|Backend Runtime|Python 3.12, FastAPI, uvicorn (asyncio)|
+|ML — detection|YOLOv8n via `ultralytics`|
+|ML — re-ID + search|CLIP ViT-B/32 via `open-clip-torch`|
+|Coconut tracking|Custom `_CentroidTracker` + `scipy` (Hungarian algorithm)|
+|Video decoding|OpenCV (`cv2.VideoCapture`)|
+|Message broker|Redis 7 pub/sub|
+|Database|PostgreSQL 16 + pgvector extension|
+|ORM / migrations||
+|Dependency manager|Conda|
+|Frontend||
+|Containers|Docker Compose — Redis + PostgreSQL only|
+
 ## Project Structure
 
 ```text
@@ -46,22 +61,6 @@ realtime-industrial-coconut-counting/
 - Node.js 20+
 
 No GPU, no Google account, no cloud services required.
-
-## System Requirements
-### Tech Stacks
-|Layer|Technology|
-|----|----|
-|Backend Runtime|Python 3.12, FastAPI, uvicorn (asyncio)|
-|ML — detection|YOLOv8n via `ultralytics`|
-|ML — re-ID + search|CLIP ViT-B/32 via `open-clip-torch`|
-|Coconut tracking|Custom `_CentroidTracker` + `scipy` (Hungarian algorithm)|
-|Video decoding|OpenCV (`cv2.VideoCapture`)|
-|Message broker|Redis 7 pub/sub|
-|Database|PostgreSQL 16 + pgvector extension|
-|ORM / migrations||
-|Dependency manager|Conda|
-|Frontend||
-|Containers|Docker Compose — Redis + PostgreSQL only|
 
 ## Setup and Installation
 
