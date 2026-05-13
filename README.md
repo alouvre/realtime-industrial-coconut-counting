@@ -46,7 +46,6 @@ realtime-industrial-coconut-counting/
 |Dependency manager|Conda|
 |Frontend||
 |Containers||
-|----|----|
 
 ## Setup and Installation
 
