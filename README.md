@@ -5,8 +5,15 @@
 ## Features
 |Feature|Detail|
 |----|----|
-|||
-|||
+|Coconut detection|YOLOv8n, conf=0.20, iou=0.35, imgsz=416 — optimised for distant coconuts at surveillance resolution|
+|Stable track IDs|`_CentroidTracker` with Hungarian assignment `(scipy.optimize.linear_sum_assignment`); EMA velocity smoothing; edge-proximity expiry|
+|Smooth motion|Integral velocity decay extrapolation between YOLO updates — boxes decelerate to a stop instead of teleporting|
+|Demand-driven CPU||
+|Coconut re-ID||
+|Behaviour alerts||
+|Analytics dashboard||
+|NL video search||
+|DB persistence||
 
 ## Project Structure
 
