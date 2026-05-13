@@ -46,16 +46,16 @@ realtime-industrial-coconut-counting/
 |Layer|Technology|
 |----|----|
 |Backend Runtime|Python 3.12, FastAPI, uvicorn (asyncio)|
-|ML — detection|YOLOv8n via ultralytics|
-|ML — re-ID + search||
-|Coconut tracking||
-|Video decoding||
-|Message broker||
-|Database||
+|ML — detection|YOLOv8n via `ultralytics`|
+|ML — re-ID + search|CLIP ViT-B/32 via `open-clip-torch`|
+|Coconut tracking|Custom `_CentroidTracker` + `scipy` (Hungarian algorithm)|
+|Video decoding|OpenCV (`cv2.VideoCapture`)|
+|Message broker|Redis 7 pub/sub|
+|Database|PostgreSQL 16 + pgvector extension|
 |ORM / migrations||
 |Dependency manager|Conda|
 |Frontend||
-|Containers||
+|Containers|Docker Compose — Redis + PostgreSQL only|
 
 ## Setup and Installation
 
