@@ -5,7 +5,7 @@ Production-ready realtime coconut detection, tracking, and counting system power
 No cloud GPU. No ngrok. No external inference server. Everything runs on an AMD Ryzen 5 5600H.
 
 ## Demo
-https://github.com/user-attachments/assets/realtime-demo.mp4
+![Demo](../assets/realtime-demo.gif)
 
 ## Features
 |Feature|Detail|
