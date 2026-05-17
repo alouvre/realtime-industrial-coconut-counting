@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+websockets
+streamlit
+streamlit-autorefresh
+opencv-python
+ultralytics
+requests
+protobuf
+python-multipart
