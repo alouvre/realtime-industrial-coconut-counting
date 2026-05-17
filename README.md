@@ -7,6 +7,10 @@ No cloud GPU. No ngrok. No external inference server. Everything runs on an AMD 
 ## Demo
 ![Demo](assets/realtime-demo.gif)
 
+<p align="center">
+  <img src="assets/realtime-demo.gif" width="700"/>
+</p>
+
 ## Features
 |Feature|Detail|
 |----|----|
