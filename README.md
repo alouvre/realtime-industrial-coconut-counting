@@ -119,6 +119,13 @@ No GPU, no Google account, no cloud services required.
 |/resume|POST|Resume stream|
 /reset_counter|POST|Reset counting statistics|
 
+
+## Limitations
+- Performance decreases under severe motion blur
+- Occlusion-heavy scenes may still produce ID switches
+- Streamlit frontend not optimized for large-scale multi-camera deployment
+- CPU inference only (no TensorRT/GPU acceleration yet)
+
 ## License
 This project is licensed under the Apache License, Version 2.0. See the [LICENSE](LICENSE) file for more information.
 
