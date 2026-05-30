@@ -41,8 +41,17 @@ No cloud GPU. No ngrok. No external inference server. Everything runs on an AMD 
 |Frontend Dashboard|Streamlit|
 |Containerization|Docker Compose — Redis + PostgreSQL only|
 
-## Project Structure
+## Hardware
+Designed and measured on an AMD Ryzen 5 (4 cores / 8 threads, no GPU).
+|Constant|Value|Reason|
+|----|----|----|
+|`torch.set_num_threads`|4|Optimal; 6 causes thermal throttle|
+|YOLO `imgsz`|416|Faster than 320 on this CPU (measured)|
+|YOLO latency|~291 ms/call|8 cameras × 291 ms ≈ 2.3 s cycle|
+|Max parallel YOLO calls|1|Serial is faster than concurrent on CPU|
+|`TARGET_FPS` (display)|10|	Independent of the ~0.3 Hz inference rate|
 
+## Repository Layout
 ```text
 realtime-industrial-coconut-counting/
 ├── api/                # FastAPI backend server
