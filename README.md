@@ -42,7 +42,7 @@ No cloud GPU. No ngrok. No external inference server. Everything runs on an AMD 
 |Containerization|Docker Compose — Redis + PostgreSQL only|
 
 ## Hardware
-Designed and measured on an AMD Ryzen 5 (4 cores / 8 threads, no GPU).
+Designed and measured on an  AMD Ryzen 5 5600H (4 cores / 8 threads, no GPU).
 |Constant|Value|Reason|
 |----|----|----|
 |`torch.set_num_threads`|4|Optimal; 6 causes thermal throttle|
